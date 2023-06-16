@@ -3,6 +3,13 @@
   flex-direction: row;
 }
 
+.nav-bar-list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 
 /* for dark mode and light mode 8 */
 .toggle-switch {

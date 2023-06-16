@@ -20,7 +20,15 @@ let DarkModeToggle = () => {
 };
 
 let Nav = () => {
-    return null;
+    return (
+      <div className="nav-bar-container">
+        <ul className="nav-bar-list">
+          <li>Home</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    )
 
 };
 

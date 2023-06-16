@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const DarkModeToggle = () => {
+let DarkModeToggle = () => {
   const [darkModeStatus, setDarkModeStatus] = useState(false);
 
   const handleToggle = () => {
@@ -19,10 +19,22 @@ const DarkModeToggle = () => {
   );
 };
 
+let Nav = () => {
+    return null;
+
+};
+
+let Social = () => {
+    return null;
+
+};
+
 let TopHeader = () => {
   return (
     <div className="flex-box-one">
       <DarkModeToggle />
+      <Nav/>
+      <Social/>
     </div>
   );
 };

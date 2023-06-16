@@ -25,7 +25,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: orange;
+  background-color: #24272C;
   transition: .4s;
 }
 
@@ -36,17 +36,18 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-image: url('https://img.icons8.com/ios/50/moon-symbol.png');
+  background-image: url('https://i.imgur.com/YGys7Qx.png');
+
   background-size: cover;
   transition: .4s;
 }
 
 .toggle-switch input:checked + .slider {
-  background-color: green;
+  background-color: #E9EAF0;
 }
 
 .toggle-switch input:checked + .slider:before {
-  background-image: url('https://img.icons8.com/external-linear-outline-icons-papa-vector/78/external-Light-Mode-interface-linear-outline-icons-papa-vector.png');
+  background-image: url('https://i.imgur.com/jbNeS6K.png');
   transform: translateX(26px);
 }
 

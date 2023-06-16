@@ -1,17 +1,14 @@
-import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import TopHeader from "./componenets/Header";
-
+import React from 'react'
+import { Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
+import HomePage from "./componenets/Home";
 
 function App() {
-
-
   return (
     <>
-      <TopHeader />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </>
   );
 }

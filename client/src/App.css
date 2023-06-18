@@ -37,7 +37,7 @@
     margin-left: -20px;
     top: 50px;
     left: 20px;
-    width: 200px;
+    width: 100% !important;
     background-color:rgb(238, 238, 238) !important;
     list-style-type: none;
     padding: 10px;
@@ -50,11 +50,15 @@
     transform: scaleX(1);
   }
 
-  .ham-menu-list-mob {
+  .ham-menu-list-mob-a {
     list-style: none !important;
     font-family: "Inter", sans-serif !important;
     text-decoration: none !important;
     color: var(--header-font-color) !important;
+  }
+
+  .ham-menu-list-li{
+    padding-top: 7px;
   }
 
   .social-media-list {

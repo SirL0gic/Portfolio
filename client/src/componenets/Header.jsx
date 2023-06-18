@@ -89,9 +89,9 @@ let HamburgerMenu = () => {
         <li>
           <DarkModeToggle />
         </li>
-        <li><a className="ham-menu-list-mob" href="https://github.com/SirL0gic">Home</a></li>
-        <li><a className="ham-menu-list-mob" href="https://github.com/SirL0gic">Projects</a></li>
-        <li><a className="ham-menu-list-mob" href="https://github.com/SirL0gic">Contact</a></li>
+        <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">Home</a></li>
+        <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">Projects</a></li>
+        <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">Contact</a></li>
         <li ><Social/></li>
       </ul>
     </div>

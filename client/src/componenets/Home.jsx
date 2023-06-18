@@ -6,8 +6,8 @@ import TopHeader from "./Header";
 let HomePage = () => {
   return (
     <Container fluid className="main-container">
-      <Row>
-        <Col>
+      <Row className='row-one'>
+        <Col className='col-one' lg={12}>
           {" "}
           <TopHeader />
         </Col>

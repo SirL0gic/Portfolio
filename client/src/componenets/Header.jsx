@@ -86,9 +86,12 @@ let HamburgerMenu = () => {
       <div className="hamburger-line"></div>
       <div className="hamburger-line"></div>
       <ul className={`menu-items ${isOpen ? "open" : ""}`}>
-        <li>Home</li>
+        <li>
+          <DarkModeToggle />
+        </li>
         <li>About</li>
         <li>Contact</li>
+        <li><Social/></li>
       </ul>
     </div>
   );
@@ -98,10 +101,13 @@ let HamburgerMenu = () => {
 let TopHeader = () => {
   return (
     <div className="flex-box-header">
-      <HamburgerMenu/>
-      <DarkModeToggle />
-      <Nav />
-      <Social />
+      <HamburgerMenu />
+      <div className="mobile-box">
+        {" "}
+        <DarkModeToggle />
+        <Nav />
+        <Social />
+      </div>
     </div>
   );
 };

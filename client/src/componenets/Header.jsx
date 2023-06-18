@@ -28,9 +28,9 @@ let Nav = () => {
   return (
     <div className="nav-bar-container">
       <ul className="nav-bar-list">
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li><a href="https://github.com/SirL0gic">Home</a></li>
+        <li><a href="https://github.com/SirL0gic">Projects</a></li>
+        <li><a href="https://github.com/SirL0gic">Contact</a></li>
       </ul>
     </div>
   );
@@ -89,9 +89,10 @@ let HamburgerMenu = () => {
         <li>
           <DarkModeToggle />
         </li>
-        <li>About</li>
-        <li>Contact</li>
-        <li><Social/></li>
+        <li><a className="ham-menu-list-mob" href="https://github.com/SirL0gic">Home</a></li>
+        <li><a className="ham-menu-list-mob" href="https://github.com/SirL0gic">Projects</a></li>
+        <li><a className="ham-menu-list-mob" href="https://github.com/SirL0gic">Contact</a></li>
+        <li ><Social/></li>
       </ul>
     </div>
   );

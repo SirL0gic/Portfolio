@@ -4,13 +4,7 @@ import linkedinLogo from "../assets/linkedin.svg";
 import instagramLogo from "../assets/instagram.svg";
 
 // Dark Mode toggle
-let DarkModeToggle = () => {
-  const [darkModeStatus, setDarkModeStatus] = useState(false);
-
-  const handleToggle = () => {
-    setDarkModeStatus(!darkModeStatus);
-  };
-
+let DarkModeToggle = ({ darkModeStatus, handleToggle }) => {
   return (
     <label
       className={`toggle-switch ${
@@ -36,7 +30,7 @@ let Nav = () => {
   );
 };
 
-//Soical Media Icons
+// Social Media Icons
 let Social = () => {
   return (
     <div className="social-media-container">
@@ -47,7 +41,6 @@ let Social = () => {
           </a>
         </li>
         <li>
-          {" "}
           <a href="https://www.linkedin.com/in/abisali/" target="_blank">
             <img
               src={linkedinLogo}
@@ -70,7 +63,7 @@ let Social = () => {
   );
 };
 
-let HamburgerMenu = () => {
+let HamburgerMenu = ({ darkModeStatus, handleToggle }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   let toggleMenu = () => {
@@ -87,12 +80,12 @@ let HamburgerMenu = () => {
       <div className="hamburger-line"></div>
       <ul className={`menu-items ${isOpen ? "open" : ""}`}>
         <li>
-          <DarkModeToggle />
+          <DarkModeToggle darkModeStatus={darkModeStatus} handleToggle={handleToggle} />
         </li>
         <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">Home</a></li>
         <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">Projects</a></li>
         <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">Contact</a></li>
-        <li ><Social/></li>
+        <li><Social/></li>
       </ul>
     </div>
   );
@@ -100,12 +93,17 @@ let HamburgerMenu = () => {
 
 // Main component
 let TopHeader = () => {
+  const [darkModeStatus, setDarkModeStatus] = useState(false);
+
+  const handleToggle = () => {
+    setDarkModeStatus(!darkModeStatus);
+  };
+
   return (
     <div className="flex-box-header">
-      <HamburgerMenu />
+      <HamburgerMenu darkModeStatus={darkModeStatus} handleToggle={handleToggle} />
       <div className="mobile-box">
-        {" "}
-        <DarkModeToggle />
+        <DarkModeToggle darkModeStatus={darkModeStatus} handleToggle={handleToggle} />
         <Nav />
         <Social />
       </div>

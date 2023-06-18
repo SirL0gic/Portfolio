@@ -8,9 +8,11 @@ let HomePage = () => {
     <Container fluid className="main-container">
       <Row className='row-one'>
         <Col className='col-one' lg={12}>
-          {" "}
           <TopHeader />
         </Col>
+      </Row>
+      <Row className='row-two'>
+        <Col className='col-two'></Col>
       </Row>
     </Container>
   );

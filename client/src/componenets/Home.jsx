@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TopHeader from "./Header";
+import ProfileSection from './Profile';
 
 let HomePage = () => {
   return (
@@ -12,7 +13,9 @@ let HomePage = () => {
         </Col>
       </Row>
       <Row className='row-two'>
-        <Col className='col-two'></Col>
+        <Col className='col-two'  lg={12}>
+          <ProfileSection/>
+        </Col>
       </Row>
     </Container>
   );

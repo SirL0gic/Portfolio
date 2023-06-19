@@ -84,7 +84,7 @@
   }
 
   .ham-menu-list-li {
-    font-size: 20px;;
+    font-size: 20px;
   }
 
   .profile-image-area {
@@ -103,9 +103,9 @@
     background-clip: text;
     line-height: 40px !important;
   }
-  
-  .special-case-one{
-    line-height: 50px;
+
+  .special-case-one {
+    line-height: 57px;
   }
 
   .hand-image {
@@ -114,7 +114,6 @@
     margin-bottom: 5px !important;
     margin-left: 10px;
   }
-  
 }
 
 :root {
@@ -148,13 +147,13 @@
   font-family: var(--main-font);
   margin-top: 170px;
   margin-left: 80px;
-  font-size: 58px;
+  font-size: 60px;
   font-weight: bold;
   background: linear-gradient(180deg, #e70faa 0%, #00c0fd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  line-height: 75px;
+  line-height: 68px;
 }
 
 .hand-image {
@@ -163,7 +162,6 @@
   margin-bottom: 10px;
   margin-left: 10px;
 }
-
 
 .mobile-box {
   display: contents;
@@ -315,4 +313,15 @@
 
 .menu-items.open {
   transform: scaleX(1);
+}
+
+.tech-stack-headings {
+  font-family: var(--main-font);
+  text-align: center;
+  margin-top: 150px;
+}
+
+.tech-stack-headings h1 {
+  color: rgba(66, 68, 110, 1);
+  font-weight: bold;
 }

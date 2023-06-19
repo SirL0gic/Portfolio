@@ -35,18 +35,13 @@ const ProfileSection = () => {
         <Col className="col-three" lg={6} s={12}>
           <div className="profile-text-area">
             <p>
-            Hi,
+            Hi
               <img
                 src={hand}
                 alt="hand"
                 className="hand-image"
-                style={{
-                  width: "60px",
-                  height: "60px",
-                  marginBottom: "10px",
-                  marginLeft: "10px",
-                }}
               />
+              ,
             </p>
             <p>
               <TypingEffect text="I’m Abis" typingDelay={50} />

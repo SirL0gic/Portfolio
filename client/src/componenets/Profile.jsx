@@ -46,7 +46,7 @@ const ProfileSection = () => {
             <p>
               <TypingEffect text="I’m Abis" typingDelay={50} />
             </p>
-            <p>
+            <p className="special-case-one">
               <TypingEffect text="& I build digital solutions" typingDelay={100} />
             </p>
           </div>

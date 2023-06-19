@@ -103,6 +103,10 @@
     background-clip: text;
     line-height: 40px !important;
   }
+  
+  .special-case-one{
+    line-height: 50px;
+  }
 
   .hand-image {
     width: 40px !important;

@@ -318,10 +318,36 @@
 .tech-stack-headings {
   font-family: var(--main-font);
   text-align: center;
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 .tech-stack-headings h1 {
   color: rgba(66, 68, 110, 1);
   font-weight: bold;
+  font-size: 55px;
+}
+
+.tech-stack-headings h2 {
+  color: #666666;
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+
+.tech-items-box-one {
+  margin-top: 80px;
+ 
+}
+
+.tech-items-list-one {
+  list-style: none;
+  display: flex;
+  flex-direction: row !important;
+  gap: 100px;
+}
+
+.tech-items-list-two {
+  list-style: none;
+  display: flex;
+  flex-direction: row !important;
+  gap: 100px;
 }

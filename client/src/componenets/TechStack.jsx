@@ -1,6 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import htmlLogo from "../assets/html.svg";
+import cssLogo from "../assets/css.svg";
+import jsLogo from "../assets/js.svg";
 
 let TechStackSection = () => {
   return (
@@ -14,7 +17,38 @@ let TechStackSection = () => {
         </Col>
       </Row>
       <Row className="row-six">
-        <Col className="col-seven"></Col>
+        <Col className="col-seven">
+          <div className="tech-items-box-one">
+            <ul className="tech-items-list-one">
+              <li>
+                {" "}
+                <img src={htmlLogo} alt="htmp"/>
+              </li>
+              <li>
+                {" "}
+                <img src={cssLogo} alt="css"/>
+              </li>
+              <li>
+                {" "}
+                <img src={jsLogo} alt="js"/>
+              </li>
+            </ul>
+            <ul className="tech-items-list-two">
+              <li>
+                {" "}
+                <img src={htmlLogo} alt="htmp"/>
+              </li>
+              <li>
+                {" "}
+                <img src={cssLogo} alt="css"/>
+              </li>
+              <li>
+                {" "}
+                <img src={jsLogo} alt="js"/>
+              </li>
+            </ul>
+          </div>
+        </Col>
         <Col className="col-eight"></Col>
       </Row>
     </Container>

@@ -6,6 +6,7 @@ import ProfileSection from "./Profile";
 import TechStackSection from "./TechStack";
 
 let HomePage = () => {
+
   return (
     <Container fluid className="main-container">
       <Row className="row-one">

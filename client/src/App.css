@@ -115,16 +115,16 @@
     margin-left: 10px;
   }
 
-  .tech-stack-headings h1 {
-    color: rgba(66, 68, 110, 1);
-    font-weight: bold;
-    font-size: 45px !important;
-  }
-
   .tech-stack-headings {
     font-family: var(--main-font);
     text-align: center;
     margin-top: 100px !important;
+  }
+
+  .tech-stack-headings h1 {
+    color: rgba(66, 68, 110, 1);
+    font-weight: bold;
+    font-size: 45px !important;
   }
 
   .tech-items-box-one {
@@ -397,13 +397,12 @@
 }
 
 .tech-items-box-one {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .tech-items-box-two {
-  margin-top: 80px;
+  margin-top: 60px;
 }
-
 
 .tech-items-box-one img {
   height: 120px;

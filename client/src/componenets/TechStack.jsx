@@ -35,7 +35,7 @@ let TechStackSection = () => {
       </Row>
       <Row className="row-six">
         <Col className="col-seven" lg={6} sm={12}>
-          <div data-aos="fade-right" data-aos-duration="1000">
+          <div data-aos="zoom-in" data-aos-duration="1000">
             <div className="tech-items-box-one">
               <ul className="tech-items-list-one">
                 <li>
@@ -70,7 +70,7 @@ let TechStackSection = () => {
         </Col>
 
         <Col className="col-eight" lg={6} sm={12}>
-          <div data-aos="fade-left" data-aos-duration="1000">
+          <div data-aos="zoom-in" data-aos-duration="1000">
             <div className="tech-items-box-two">
               <ul className="tech-items-list-one">
                 <li>

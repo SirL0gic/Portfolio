@@ -431,3 +431,25 @@
   flex-direction: row;
   gap: 100px;
 }
+
+
+.project-section-container-desktop{
+  text-align: center;
+  margin-top: 150px;
+}
+
+.project-title-box {
+  font-family: var(--main-font);
+  margin-bottom: 100px;
+}
+
+.project-title-box  h2 {
+  color: rgba(66, 68, 110, 1);
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.project-title-box  h3 {
+  color: #666666;
+  font-size: 20px;
+}

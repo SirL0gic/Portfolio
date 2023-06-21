@@ -4,9 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import TopHeader from "./Header";
 import ProfileSection from "./Profile";
 import TechStackSection from "./TechStack";
+import ProjectsSection from "./Projects";
 
 let HomePage = () => {
-
   return (
     <Container fluid className="main-container">
       <Row className="row-one">
@@ -23,6 +23,14 @@ let HomePage = () => {
         <Col className="col-five" lg={12}>
           <TechStackSection />
         </Col>
+      </Row>
+      <Row className="row-projects-desktop">
+        <Col className="col-projects-desktop" lg={12}>
+          <ProjectsSection />
+        </Col>
+      </Row>
+      <Row className="row-projects-mobile">
+        <Col></Col>
       </Row>
     </Container>
   );

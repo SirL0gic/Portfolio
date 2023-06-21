@@ -7,14 +7,22 @@ import Card from "react-bootstrap/Card";
 let ProjectCard = () => {
   return (
     <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img
+        variant="top"
+        src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg"
+      />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Text>Tech Stack:</Card.Text>
+        <div className="card-links-flex-box">
+          {" "}
+          <a>Link Preview</a>
+          <a>View Code</a>
+        </div>
       </Card.Body>
     </Card>
   );
@@ -31,15 +39,32 @@ let ProjectsSection = () => {
           </div>
         </Col>
       </Row>
-      <Row>
-        <Col></Col>
-        <Col></Col>
-        <Col></Col>
+      <Row className="row-projects-list-one">
+        <Col lg={4}>
+          <ProjectCard />
+        </Col>
+        <Col lg={4}>
+          {" "}
+          <ProjectCard />
+        </Col>
+        <Col lg={4}>
+          {" "}
+          <ProjectCard />
+        </Col>
       </Row>
-      <Row>
-        <Col></Col>
-        <Col></Col>
-        <Col></Col>
+      <Row className="row-projects-list-two">
+        <Col lg={4}>
+          {" "}
+          <ProjectCard />
+        </Col>
+        <Col lg={4}>
+          {" "}
+          <ProjectCard />
+        </Col>
+        <Col lg={4}>
+          {" "}
+          <ProjectCard />
+        </Col>
       </Row>
     </Container>
   );

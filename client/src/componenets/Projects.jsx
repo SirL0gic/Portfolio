@@ -4,11 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import linkImage from "../assets/link.svg";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 let ProjectCard = () => {
   return (
     <Card className="project-card" style={{ width: "22rem" }}>
       <Card.Img
-      className="project-card-image"
+        className="project-card-image"
         variant="top"
         src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg"
       />
@@ -31,6 +34,10 @@ let ProjectCard = () => {
 };
 
 let ProjectsSection = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS library
+  }, []);
+  
   return (
     <Container className="project-section-container-desktop">
       <Row className="row-projects-section-title">
@@ -67,7 +74,7 @@ let ProjectsSection = () => {
           {" "}
           <ProjectCard />
         </Col>
-        <br/>
+        <br />
         <a className="see-all-proj">See All Projects</a>
       </Row>
     </Container>

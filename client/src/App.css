@@ -459,3 +459,21 @@
   flex-direction: row;
   gap:80px;
 }
+
+.row-projects-list-one {
+  margin-left: 50px !important;
+}
+
+.row-projects-list-two {
+  margin-top: 60px  !important;
+  margin-left: 50px !important;
+}
+
+.project-card {
+  border-radius: 25px !important;
+}
+
+.project-card-image {
+  border-top-right-radius: 25px !important;
+  border-top-left-radius: 25px !important;
+}

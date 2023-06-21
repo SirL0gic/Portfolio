@@ -6,8 +6,9 @@ import Card from "react-bootstrap/Card";
 
 let ProjectCard = () => {
   return (
-    <Card style={{ width: "18rem" }}>
+    <Card className="project-card" style={{ width: "22rem" }}>
       <Card.Img
+      className="project-card-image"
         variant="top"
         src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg"
       />

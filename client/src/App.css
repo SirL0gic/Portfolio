@@ -457,23 +457,63 @@
 .card-links-flex-box {
   display: flex;
   flex-direction: row;
-  gap:80px;
+  /* gap:90px; */
 }
 
 .row-projects-list-one {
-  margin-left: 50px !important;
+  margin-left: 40px !important;
 }
 
 .row-projects-list-two {
   margin-top: 60px  !important;
-  margin-left: 50px !important;
+  margin-left: 40px !important;
 }
 
 .project-card {
+  font-family: var(--main-font);
   border-radius: 25px !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border-color: white !important;
 }
 
 .project-card-image {
   border-top-right-radius: 25px !important;
   border-top-left-radius: 25px !important;
+}
+
+.card-title {
+  font-size: 30px !important;
+}
+
+.card-dec {
+  text-align: left;
+  font-size: 16px !important;
+  color:  #666666;
+  font-style: normal !important;
+  font-weight: lighter;
+
+}
+
+.card-teach-stack{
+  text-align: left;
+  color: #42446E;
+  font-size: 14px !important;
+}
+
+.card-link-one {
+  font-size: 14px !important;
+  color: #000000;
+  margin-left: 5px;
+}
+
+.card-link-two {
+  font-size: 14px !important;
+  color: #000000;
+  margin-left: 135px;
+}
+
+.see-all-proj{
+  color: #000000;
+  margin-top: 80px !important;
+  font-size: 25px;
 }

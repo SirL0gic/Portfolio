@@ -169,6 +169,16 @@
   .row-projects-desktop {
     display: none !important;
   }
+
+  .row-projects-mobile{
+    display:inline !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .row-projects-mobile {
+    display: none !important;
+  }
 }
 
 :root {
@@ -521,3 +531,4 @@
   margin-top: 80px !important;
   font-size: 25px;
 }
+

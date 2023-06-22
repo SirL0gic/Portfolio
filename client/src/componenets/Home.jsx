@@ -31,7 +31,9 @@ let HomePage = () => {
         </Col>
       </Row>
       <Row className="row-projects-mobile">
-        <Col className="col-projects-mobile" lg={12}></Col>
+        <Col className="col-projects-mobile" lg={12}>
+          <ProjectSectionMobile/>
+        </Col>
       </Row>
     </Container>
   );

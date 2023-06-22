@@ -24,10 +24,9 @@ let Nav = () => {
   );
 };
 
-// Social Media Icons
 let Social = () => {
   return (
-    <div className="social-media-container">
+    <div id="footer-social-media" className="social-media-container">
       <ul className="social-media-list">
         <li>
           <a href="https://github.com/SirL0gic" target="_blank">
@@ -65,6 +64,7 @@ let FooterSection = () => {
           <img src={lineLogo} alt="line" className="line-image" />
         </Col>
       </Row>
+
       <Row className="row-footer-two">
         <Col className="col-footer-two" lg={4} sm={12}>
           <Nav />

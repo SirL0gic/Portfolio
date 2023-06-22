@@ -225,9 +225,37 @@
   }
 
   .mail-image {
-    /* height: 30px; */
     width: 85%;
   }
+
+
+.line-image {
+  margin-top: 200px;
+  margin-bottom: 20px;
+  height: 30px  !important;
+  width: 300px;
+}
+
+.col-footer-two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#footer-menu {
+  margin-right: 50px;
+}
+
+#footer-social-media {
+  margin-right: 20px;
+}
+
+.name-box {
+  margin-right: 75px;
+  margin-top: 10px;
+}
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -628,5 +656,28 @@
 }
 
 #footer-menu > ul {
+  font-family: var(--main-font);
   font-size: 15px;
+}
+
+.name-text {
+  font-family: var(--main-font);
+  font-size: 15px;
+  margin-right: 40px;
+}
+
+#footer-social-media > ul > li > a > img {
+  height: 25px;
+  width: 25px;
+}
+
+.col-footer-three {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-footer-four {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }

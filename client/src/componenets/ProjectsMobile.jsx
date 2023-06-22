@@ -45,7 +45,7 @@ let ProjectSectionMobile = () => {
       <Row className="row-projects-carousel">
         <Col sm={12}>
           <div className="all-carousel">
-            <Carousel>
+            <Carousel interval={3000}>
               <Carousel.Item>
                 <ProjectCard />
               </Carousel.Item>
@@ -56,6 +56,8 @@ let ProjectSectionMobile = () => {
             </Carousel>
           </div>
         </Col>
+        <br />
+          <a className="see-all-proj">See All Projects</a>
       </Row>
     </Container>
   );

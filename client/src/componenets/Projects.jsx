@@ -37,7 +37,7 @@ let ProjectsSection = () => {
   useEffect(() => {
     AOS.init(); // Initialize AOS library
   }, []);
-  
+
   return (
     <Container className="project-section-container-desktop">
       <Row className="row-projects-section-title">
@@ -48,35 +48,40 @@ let ProjectsSection = () => {
           </div>
         </Col>
       </Row>
-      <Row className="row-projects-list-one">
-        <Col lg={4}>
-          <ProjectCard />
-        </Col>
-        <Col lg={4}>
-          {" "}
-          <ProjectCard />
-        </Col>
-        <Col lg={4}>
-          {" "}
-          <ProjectCard />
-        </Col>
-      </Row>
-      <Row className="row-projects-list-two">
-        <Col lg={4}>
-          {" "}
-          <ProjectCard />
-        </Col>
-        <Col lg={4}>
-          {" "}
-          <ProjectCard />
-        </Col>
-        <Col lg={4}>
-          {" "}
-          <ProjectCard />
-        </Col>
-        <br />
-        <a className="see-all-proj">See All Projects</a>
-      </Row>
+      <div data-aos="flip-up" data-aos-duration="1000">
+        <Row className="row-projects-list-one">
+          <Col lg={4}>
+            <ProjectCard />
+          </Col>
+          <Col lg={4}>
+            {" "}
+            <ProjectCard />
+          </Col>
+          <Col lg={4}>
+            {" "}
+            <ProjectCard />
+          </Col>
+        </Row>
+      </div>
+
+      <div data-aos="flip-up" data-aos-duration="1000">
+        <Row className="row-projects-list-two">
+          <Col lg={4}>
+            {" "}
+            <ProjectCard />
+          </Col>
+          <Col lg={4}>
+            {" "}
+            <ProjectCard />
+          </Col>
+          <Col lg={4}>
+            {" "}
+            <ProjectCard />
+          </Col>
+          <br />
+          <a className="see-all-proj">See All Projects</a>
+        </Row>
+      </div>
     </Container>
   );
 };

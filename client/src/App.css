@@ -165,6 +165,10 @@
     gap: 50px !important;
     padding-left: 0px;
   }
+
+  .row-projects-desktop {
+    display: none !important;
+  }
 }
 
 :root {

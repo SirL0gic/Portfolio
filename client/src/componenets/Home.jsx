@@ -4,7 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import TopHeader from "./Header";
 import ProfileSection from "./Profile";
 import TechStackSection from "./TechStack";
-import ProjectsSection from "./Projects";
+import ProjectsSectionDesktop from "./Projects";
+import ProjectSectionMobile from "./ProjectsMobile";
 
 let HomePage = () => {
   return (
@@ -26,11 +27,11 @@ let HomePage = () => {
       </Row>
       <Row className="row-projects-desktop">
         <Col className="col-projects-desktop" lg={12}>
-          <ProjectsSection />
+          <ProjectsSectionDesktop />
         </Col>
       </Row>
       <Row className="row-projects-mobile">
-        <Col></Col>
+        <Col className="col-projects-mobile" lg={12}></Col>
       </Row>
     </Container>
   );

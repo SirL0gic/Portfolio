@@ -33,7 +33,7 @@ let ProjectCard = () => {
   );
 };
 
-let ProjectsSection = () => {
+let ProjectsSectionDesktop = () => {
   useEffect(() => {
     AOS.init(); // Initialize AOS library
   }, []);
@@ -86,4 +86,4 @@ let ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;
+export default ProjectsSectionDesktop;

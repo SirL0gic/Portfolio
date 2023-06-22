@@ -50,14 +50,14 @@ let ProjectsSectionDesktop = () => {
       </Row>
       <div data-aos="flip-up" data-aos-duration="1000">
         <Row className="row-projects-list-one">
-          <Col lg={4}>
+          <Col className="col-card-hold" lg={4}>
             <ProjectCard />
           </Col>
-          <Col lg={4}>
+          <Col className="col-card-hold" lg={4}>
             {" "}
             <ProjectCard />
           </Col>
-          <Col lg={4}>
+          <Col className="col-card-hold" lg={4}>
             {" "}
             <ProjectCard />
           </Col>
@@ -66,15 +66,15 @@ let ProjectsSectionDesktop = () => {
 
       <div data-aos="flip-up" data-aos-duration="1000">
         <Row className="row-projects-list-two">
-          <Col lg={4}>
+          <Col className="col-card-hold" lg={4}>
             {" "}
             <ProjectCard />
           </Col>
-          <Col lg={4}>
+          <Col className="col-card-hold" lg={4}>
             {" "}
             <ProjectCard />
           </Col>
-          <Col lg={4}>
+          <Col className="col-card-hold" lg={4}>
             {" "}
             <ProjectCard />
           </Col>

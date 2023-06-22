@@ -526,13 +526,14 @@
   /* gap:90px; */
 }
 
-.row-projects-list-one {
-  margin-left: 40px !important;
-}
-
 .row-projects-list-two {
   margin-top: 60px !important;
-  margin-left: 40px !important;
+}
+
+.col-card-hold {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-card {
@@ -611,4 +612,21 @@
   -webkit-animation: text-focus-in 2.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
     0.7s both;
   animation: text-focus-in 2.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.7s both;
+}
+
+.line-image {
+  margin-top: 200px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2px;
+}
+
+#footer-menu {
+  margin-left: 8px;
+}
+
+#footer-menu > ul {
+  font-size: 15px;
 }

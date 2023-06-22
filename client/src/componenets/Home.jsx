@@ -7,6 +7,7 @@ import TechStackSection from "./TechStack";
 import ProjectsSectionDesktop from "./Projects";
 import ProjectSectionMobile from "./ProjectsMobile";
 import QuestionsSection from "./Questions";
+import FooterSection from "./Footer";
 
 let HomePage = () => {
   return (
@@ -33,12 +34,17 @@ let HomePage = () => {
       </Row>
       <Row className="row-projects-mobile">
         <Col className="col-projects-mobile" lg={12}>
-          <ProjectSectionMobile/>
+          <ProjectSectionMobile />
         </Col>
       </Row>
       <Row className="row-questions">
-        <Col className="col-questions">
-          <QuestionsSection/>
+        <Col className="col-questions" lg={12}>
+          <QuestionsSection />
+        </Col>
+      </Row>
+      <Row className="row-footer">
+        <Col className="col-footer" lg={12}>
+          <FooterSection />
         </Col>
       </Row>
     </Container>

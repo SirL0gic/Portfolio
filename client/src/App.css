@@ -130,24 +130,21 @@
   .tech-items-box-one {
     margin-top: 40px !important;
   }
-  
+
   .tech-items-box-two {
     margin-top: 40px !important;
   }
-  
-  
+
   .tech-items-box-one img {
     height: 80px !important;
     width: 80px !important;
-   
   }
-  
+
   .tech-items-box-two img {
     height: 80px !important;
     width: 80px !important;
-  
   }
-  
+
   .tech-items-list-one {
     margin-top: 40px !important;
     list-style: none;
@@ -156,7 +153,7 @@
     gap: 50px !important;
     padding-left: 0px;
   }
-  
+
   .tech-items-list-two {
     margin-top: 40px !important;
     list-style: none;
@@ -166,13 +163,42 @@
     padding-left: 0px;
   }
 
+.project-title-box{
+  margin-top: 90px;
+  text-align: center;
+}
+
   .row-projects-desktop {
     display: none !important;
   }
 
-  .row-projects-mobile{
-    display:inline !important;
+  .row-projects-mobile {
+    display: inline !important;
   }
+
+  .all-carousel {
+    border-radius: 25px;
+  }
+
+  .carousel-inner{
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border-color: white !important;
+  }
+
+  .card-link-two {
+    font-size: 14px !important;
+    color: #000000;
+    margin-left: 110px !important;
+  }
+
+  .carousel.slide{
+    border-radius: 25px;
+
+  }
+
+  
 }
 
 @media only screen and (min-width: 768px) {
@@ -421,13 +447,11 @@
 .tech-items-box-one img {
   height: 120px;
   width: 120px;
- 
 }
 
 .tech-items-box-two img {
   height: 120px;
   width: 120px;
-
 }
 
 .tech-items-list-one {
@@ -446,8 +470,7 @@
   gap: 100px;
 }
 
-
-.project-section-container-desktop{
+.project-section-container-desktop {
   text-align: center;
   margin-top: 150px;
 }
@@ -457,13 +480,13 @@
   margin-bottom: 100px;
 }
 
-.project-title-box  h2 {
+.project-title-box h2 {
   color: rgba(66, 68, 110, 1);
   font-weight: bold;
   font-size: 55px;
 }
 
-.project-title-box  h3 {
+.project-title-box h3 {
   color: #666666;
   font-size: 20px;
 }
@@ -479,14 +502,15 @@
 }
 
 .row-projects-list-two {
-  margin-top: 60px  !important;
+  margin-top: 60px !important;
   margin-left: 40px !important;
 }
 
 .project-card {
   font-family: var(--main-font);
   border-radius: 25px !important;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
   border-color: white !important;
 }
 
@@ -502,15 +526,14 @@
 .card-dec {
   text-align: left;
   font-size: 16px !important;
-  color:  #666666;
+  color: #666666;
   font-style: normal !important;
   font-weight: lighter;
-
 }
 
-.card-teach-stack{
+.card-teach-stack {
   text-align: left;
-  color: #42446E;
+  color: #42446e;
   font-size: 14px !important;
 }
 
@@ -526,9 +549,8 @@
   margin-left: 135px;
 }
 
-.see-all-proj{
+.see-all-proj {
   color: #000000;
   margin-top: 80px !important;
   font-size: 25px;
 }
-

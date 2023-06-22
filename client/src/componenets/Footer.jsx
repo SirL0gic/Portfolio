@@ -1,0 +1,3 @@
+let FooterSection = () => {
+    return null;
+}

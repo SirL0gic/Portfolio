@@ -228,34 +228,31 @@
     width: 85%;
   }
 
+  .line-image {
+    margin-top: 200px;
+    margin-bottom: 20px;
+    height: 30px !important;
+    width: 300px;
+  }
 
-.line-image {
-  margin-top: 200px;
-  margin-bottom: 20px;
-  height: 30px  !important;
-  width: 300px;
-}
+  .col-footer-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.col-footer-two {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  #footer-menu {
+    margin-right: 50px;
+  }
 
-}
+  #footer-social-media {
+    margin-right: 20px;
+  }
 
-#footer-menu {
-  margin-right: 50px;
-}
-
-#footer-social-media {
-  margin-right: 20px;
-}
-
-.name-box {
-  margin-right: 75px;
-  margin-top: 10px;
-}
-
+  .name-box {
+    margin-right: 75px;
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -551,7 +548,6 @@
 .card-links-flex-box {
   display: flex;
   flex-direction: row;
-  /* gap:90px; */
 }
 
 .row-projects-list-two {

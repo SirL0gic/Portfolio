@@ -17,7 +17,7 @@ let Nav = () => {
           <a href="https://github.com/SirL0gic">Projects</a>
         </li>
         <li>
-          <a href="">Contact</a>
+          <a href="mailto:someone@yoursite.com">Contact</a>
         </li>
       </ul>
     </div>

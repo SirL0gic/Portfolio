@@ -16,7 +16,7 @@ let project_list = [
       "An e-commerce website created for a sustainable fashion brand on Shopify.",
     stack: "Liquid - Node - HTML - CSS - JS",
     live: "elemnts.com",
-    code: "",
+    code: "/",
   },
 
   {
@@ -26,7 +26,7 @@ let project_list = [
     description: "A micro SaaS platform that democratizes investment education",
     stack: "React - Node/Express - Notion",
     live: "https://opesproject.com/",
-    code: "",
+    code: "/",
   },
 
   {

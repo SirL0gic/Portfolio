@@ -79,6 +79,15 @@ let HamburgerMenu = ({ darkModeStatus, handleToggle }) => {
     setIsOpen(!isOpen);
   };
 
+  //Scroll Effect
+const scrollToTarget = () => {
+  const targetElement = document.getElementById("q-box");
+  targetElement.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  });
+};
+
   return (
     <div
       className={`hamburger-menu ${isOpen ? "open" : ""}`}
@@ -93,7 +102,7 @@ let HamburgerMenu = ({ darkModeStatus, handleToggle }) => {
         </li>
         <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="/">Home</a></li>
         <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">Projects</a></li>
-        <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" onClick={scrollToTarget} >Contact</a></li>
+        <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="mailto:someone@yoursite.com">Contact</a></li>
         <li><Social/></li>
       </ul>
     </div>

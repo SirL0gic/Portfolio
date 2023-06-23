@@ -677,3 +677,7 @@
   align-items: flex-end;
   justify-content: flex-end;
 }
+
+.row-projects-carousel .carousel-indicators {
+  display: none;
+}

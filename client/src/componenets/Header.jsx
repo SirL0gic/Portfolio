@@ -18,11 +18,12 @@ let DarkModeToggle = ({ darkModeStatus, handleToggle }) => {
 };
 
 //Scroll Effect
-const scrollToTarget = () => {
+const scrollToTarget = (event) => {
+  event.preventDefault();
   const targetElement = document.getElementById("q-box");
   targetElement.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
+    behavior: "smooth",
+    block: "start",
   });
 };
 
@@ -31,9 +32,17 @@ let Nav = () => {
   return (
     <div className="nav-bar-container">
       <ul className="nav-bar-list">
-        <li><a href="/">Home</a></li>
-        <li><a href="https://github.com/SirL0gic">Projects</a></li>
-        <li><a onClick={scrollToTarget}>Contact</a></li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="https://github.com/SirL0gic">Projects</a>
+        </li>
+        <li>
+          <a href="/" onClick={scrollToTarget}>
+            Contact
+          </a>
+        </li>
       </ul>
     </div>
   );
@@ -80,13 +89,14 @@ let HamburgerMenu = ({ darkModeStatus, handleToggle }) => {
   };
 
   //Scroll Effect
-const scrollToTarget = () => {
-  const targetElement = document.getElementById("q-box");
-  targetElement.scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
-  });
-};
+  const scrollToTarget = (event) => {
+    event.preventDefault();
+    const targetElement = document.getElementById("q-box");
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
 
   return (
     <div
@@ -98,12 +108,33 @@ const scrollToTarget = () => {
       <div className="hamburger-line"></div>
       <ul className={`menu-items ${isOpen ? "open" : ""}`}>
         <li>
-          <DarkModeToggle darkModeStatus={darkModeStatus} handleToggle={handleToggle} />
+          <DarkModeToggle
+            darkModeStatus={darkModeStatus}
+            handleToggle={handleToggle}
+          />
         </li>
-        <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="/">Home</a></li>
-        <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">Projects</a></li>
-        <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="mailto:someone@yoursite.com">Contact</a></li>
-        <li><Social/></li>
+        <li className="ham-menu-list-li">
+          <a className="ham-menu-list-mob-a" href="/">
+            Home
+          </a>
+        </li>
+        <li className="ham-menu-list-li">
+          <a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">
+            Projects
+          </a>
+        </li>
+        <li className="ham-menu-list-li">
+          <a
+            className="ham-menu-list-mob-a"
+            href="mailto:someone@yoursite.com"
+            onClick={scrollToTarget}
+          >
+            Contact
+          </a>
+        </li>
+        <li>
+          <Social />
+        </li>
       </ul>
     </div>
   );
@@ -119,9 +150,15 @@ let TopHeader = () => {
 
   return (
     <div className="flex-box-header">
-      <HamburgerMenu darkModeStatus={darkModeStatus} handleToggle={handleToggle} />
+      <HamburgerMenu
+        darkModeStatus={darkModeStatus}
+        handleToggle={handleToggle}
+      />
       <div className="mobile-box">
-        <DarkModeToggle darkModeStatus={darkModeStatus} handleToggle={handleToggle} />
+        <DarkModeToggle
+          darkModeStatus={darkModeStatus}
+          handleToggle={handleToggle}
+        />
         <Nav />
         <Social />
       </div>

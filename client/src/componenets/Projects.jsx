@@ -23,8 +23,7 @@ let project_list = [
     id: 1,
     image: "https://i.imgur.com/3eAvSjV.jpg",
     title: "Opes Project",
-    description:
-      "A micro SaaS platform that democratizes investment education",
+    description: "A micro SaaS platform that democratizes investment education",
     stack: "React - Node/Express - Notion",
     live: "https://opesproject.com/",
     code: "",
@@ -43,13 +42,34 @@ let project_list = [
 
   {
     id: 3,
-    image: "https://camo.githubusercontent.com/89dd51383ea8a975003bcae842cb97c2e12e429f981569ee19901c859ee067c5/68747470733a2f2f692e696d6775722e636f6d2f716f4c484b61442e706e67",
+    image:
+      "https://camo.githubusercontent.com/89dd51383ea8a975003bcae842cb97c2e12e429f981569ee19901c859ee067c5/68747470733a2f2f692e696d6775722e636f6d2f716f4c484b61442e706e67",
     title: "Recipely",
-    description:
-      "A food based web application for creating recipes",
+    description: "A food based web application for creating recipes",
     stack: "React - Node/Express - MongoDB",
     live: "https://1drv.ms/v/s!Apck3DEmMLfWih1RhIuJZiZqA1EN",
     code: "https://github.com/SirL0gic/Recipely",
+  },
+
+  {
+    id: 4,
+    image:
+      "https://camo.githubusercontent.com/a0a3bb45497d466fc174f7a6e347759200060b08b550869ada5dba483499a399/68747470733a2f2f692e696d6775722e636f6d2f6e334b345478612e706e67",
+    title: "The React Post",
+    description: "News web application that displays latest news articles",
+    stack: "React",
+    live: "https://1drv.ms/v/s!Apck3DEmMLfWihxii4hcayJXfowz?e=NLos4g",
+    code: "https://github.com/SirL0gic/The-React-Post",
+  },
+
+  {
+    id: 5,
+    image: "https://i.imgur.com/Bmpx7cC.png",
+    title: "Productivity Web App",
+    description: "A productivity tool that helps you organise your tasks",
+    stack: "React",
+    live: "https://1drv.ms/v/s!Apck3DEmMLfWih9YJxfmPuTVJFDc?e=gaYp7M",
+    code: "https://github.com/SirL0gic/Productivity-App",
   },
 ];
 
@@ -107,21 +127,25 @@ let ProjectsSectionDesktop = () => {
           </Col>
           <Col className="col-card-hold" lg={4}>
             {" "}
-            <ProjectCard img={project_list[1].image}
+            <ProjectCard
+              img={project_list[1].image}
               title={project_list[1].title}
               description={project_list[1].description}
               stack={project_list[1].stack}
               live={project_list[1].live}
-              code={project_list[1].code} />
+              code={project_list[1].code}
+            />
           </Col>
           <Col className="col-card-hold" lg={4}>
             {" "}
-            <ProjectCard img={project_list[2].image}
+            <ProjectCard
+              img={project_list[2].image}
               title={project_list[2].title}
               description={project_list[2].description}
               stack={project_list[2].stack}
               live={project_list[2].live}
-              code={project_list[2].code} />
+              code={project_list[2].code}
+            />
           </Col>
         </Row>
       </div>
@@ -130,15 +154,36 @@ let ProjectsSectionDesktop = () => {
         <Row className="row-projects-list-two">
           <Col className="col-card-hold" lg={4}>
             {" "}
-            <ProjectCard />
+            <ProjectCard
+              img={project_list[3].image}
+              title={project_list[3].title}
+              description={project_list[3].description}
+              stack={project_list[3].stack}
+              live={project_list[3].live}
+              code={project_list[3].code}
+            />
           </Col>
           <Col className="col-card-hold" lg={4}>
             {" "}
-            <ProjectCard />
+            <ProjectCard
+              img={project_list[4].image}
+              title={project_list[4].title}
+              description={project_list[4].description}
+              stack={project_list[4].stack}
+              live={project_list[4].live}
+              code={project_list[4].code}
+            />
           </Col>
           <Col className="col-card-hold" lg={4}>
             {" "}
-            <ProjectCard />
+            <ProjectCard
+              img={project_list[5].image}
+              title={project_list[5].title}
+              description={project_list[5].description}
+              stack={project_list[5].stack}
+              live={project_list[5].live}
+              code={project_list[5].code}
+            />
           </Col>
           <br />
           <a className="see-all-proj" href="https://github.com/SirL0gic">

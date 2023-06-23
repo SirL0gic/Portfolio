@@ -76,7 +76,7 @@ let project_list = [
 let ProjectCard = (props) => {
   return (
     <Card className="project-card" style={{ width: "22rem" }}>
-      <Card.Img className="project-card-image" variant="top" src={props.img} />
+      <Card.Img className="project-card-image" variant="top" src={props.img} alt="project-image" />
       <Card.Body>
         <Card.Title className="card-title">{props.title}</Card.Title>
         <Card.Text className="card-dec">{props.description}</Card.Text>
@@ -85,7 +85,7 @@ let ProjectCard = (props) => {
         </Card.Text>
         <div className="card-links-flex-box">
           {" "}
-          <img src={linkImage}></img>
+          <img src={linkImage} alt="link-img"/>
           <a className="card-link-one" href={props.live}>
             Link Preview
           </a>

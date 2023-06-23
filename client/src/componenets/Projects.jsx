@@ -9,9 +9,9 @@ import "aos/dist/aos.css";
 
 let project_list = [
   {
-    id: 1,
+    id: 0,
     image: "https://i.imgur.com/ApP42ec.jpg",
-    title: "ELEMNTS E-Com",
+    title: "ELEMNTS",
     description:
       "An e-commerce website created for a sustainable fashion brand on Shopify.",
     stack: "Liquid - Node - HTML - CSS - JS",
@@ -20,14 +20,36 @@ let project_list = [
   },
 
   {
+    id: 1,
+    image: "https://i.imgur.com/3eAvSjV.jpg",
+    title: "Opes Project",
+    description:
+      "A micro SaaS platform that democratizes investment education",
+    stack: "React - Node/Express - Notion",
+    live: "https://opesproject.com/",
+    code: "",
+  },
+
+  {
     id: 2,
-    image: "",
+    image: "https://gcdnb.pbrd.co/images/4C39uQ4BYzKT.png?o=1",
     title: "Hire Hub",
     description:
       "Open-source job application system that simplifies the job search process!",
     stack: "React - Node/Express - MongoDB",
     live: "https://onedrive.live.com/?authkey=%21AKSxo4ZO4Lr7Lgc&id=D6B7302631DC2497%211355&cid=D6B7302631DC2497&parId=root&parQt=sharedby&o=OneUp",
     code: "https://github.com/SirL0gic/HireHub",
+  },
+
+  {
+    id: 3,
+    image: "https://camo.githubusercontent.com/89dd51383ea8a975003bcae842cb97c2e12e429f981569ee19901c859ee067c5/68747470733a2f2f692e696d6775722e636f6d2f716f4c484b61442e706e67",
+    title: "Recipely",
+    description:
+      "A food based web application for creating recipes",
+    stack: "React - Node/Express - MongoDB",
+    live: "https://1drv.ms/v/s!Apck3DEmMLfWih1RhIuJZiZqA1EN",
+    code: "https://github.com/SirL0gic/Recipely",
   },
 ];
 
@@ -85,11 +107,21 @@ let ProjectsSectionDesktop = () => {
           </Col>
           <Col className="col-card-hold" lg={4}>
             {" "}
-            <ProjectCard />
+            <ProjectCard img={project_list[1].image}
+              title={project_list[1].title}
+              description={project_list[1].description}
+              stack={project_list[1].stack}
+              live={project_list[1].live}
+              code={project_list[1].code} />
           </Col>
           <Col className="col-card-hold" lg={4}>
             {" "}
-            <ProjectCard />
+            <ProjectCard img={project_list[2].image}
+              title={project_list[2].title}
+              description={project_list[2].description}
+              stack={project_list[2].stack}
+              live={project_list[2].live}
+              code={project_list[2].code} />
           </Col>
         </Row>
       </div>

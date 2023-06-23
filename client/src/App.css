@@ -261,6 +261,96 @@
   }
 }
 
+
+
+@media screen and (max-width: 1688px) {
+  /* Styles for laptops with screen width less than 1688px go here */
+  .flex-box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 500px !important;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1538px) {
+  /* Styles for screen sizes less than 1538px width go here */
+  .flex-box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 450px !important;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1409px) {
+  /* Styles for screen sizes less than 1538px width go here */
+  .flex-box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 420px !important;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1341px) {
+  /* Styles for screen sizes less than 1538px width go here */
+  .flex-box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 400px !important;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1302px) {
+  /* Styles for screen sizes less than 1538px width go here */
+  .flex-box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 380px !important;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1257px) {
+  /* Styles for screen sizes less than 1538px width go here */
+  .flex-box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 360px !important;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1204px) {
+  /* Styles for screen sizes less than 1538px width go here */
+  .flex-box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 340px !important;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1062px) {
+  /* Styles for screen sizes less than 1538px width go here */
+  .flex-box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 260px !important;
+    margin-top: 30px;
+  }
+}
+
 :root {
   --header-font-color: #676667;
   --main-font: "Inter", sans-serif;
@@ -681,4 +771,5 @@
 .row-projects-carousel .carousel-indicators {
   display: none;
 }
+
 

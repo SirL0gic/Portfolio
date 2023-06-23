@@ -27,7 +27,7 @@ const QuestionsSection = () => {
   }, []);
 
   return (
-    <div className="questions-box">
+    <div id="q-box" className="questions-box">
       <h1>For any questions:</h1>
       <img
         src={emailLogo}

@@ -7,19 +7,39 @@ import linkImage from "../assets/link.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-let ProjectCard = () => {
+let project_list = [
+  {
+  id: 1,  
+  image: "https://i.imgur.com/ApP42ec.jpg",
+  title: "ELEMNTS E-Com",
+  description: "An e-commerce website created for a sustainable fashion brand on Shopify.",
+  stack: "React - Node - HTML - CSS - JS - Liquid",
+  live: "elemnts.com",
+  code: ""},
+
+  {
+    id: 2,  
+    image: "",
+    title: "Hire Hub",
+    description: "Open-source job application system that simplifies the job search process!",
+    stack: "React - Node/Express - MongoDB",
+    live: "https://onedrive.live.com/?authkey=%21AKSxo4ZO4Lr7Lgc&id=D6B7302631DC2497%211355&cid=D6B7302631DC2497&parId=root&parQt=sharedby&o=OneUp",
+    code: "https://github.com/SirL0gic/HireHub"},
+
+]
+
+let ProjectCard = (props) => {
   return (
     <Card className="project-card" style={{ width: "22rem" }}>
       <Card.Img
         className="project-card-image"
         variant="top"
-        src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg"
+        src={props.img}
       />
       <Card.Body>
-        <Card.Title className="card-title">Card Title</Card.Title>
+        <Card.Title className="card-title">{props.title}</Card.Title>
         <Card.Text className="card-dec">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+      {props.description}
         </Card.Text>
         <Card.Text className="card-teach-stack">Tech Stack:</Card.Text>
         <div className="card-links-flex-box">
@@ -51,7 +71,7 @@ let ProjectsSectionDesktop = () => {
       <div data-aos="flip-up" data-aos-duration="1000">
         <Row className="row-projects-list-one">
           <Col className="col-card-hold" lg={4}>
-            <ProjectCard />
+            <ProjectCard img={project_list[0].image} title={project_list[0].title} />
           </Col>
           <Col className="col-card-hold" lg={4}>
             {" "}
@@ -79,7 +99,7 @@ let ProjectsSectionDesktop = () => {
             <ProjectCard />
           </Col>
           <br />
-          <a className="see-all-proj">See All Projects</a>
+          <a className="see-all-proj" href="https://github.com/SirL0gic">See All Projects</a>
         </Row>
       </div>
     </Container>

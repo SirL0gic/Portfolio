@@ -17,14 +17,23 @@ let DarkModeToggle = ({ darkModeStatus, handleToggle }) => {
   );
 };
 
+//Scroll Effect
+const scrollToTarget = () => {
+  const targetElement = document.getElementById("q-box");
+  targetElement.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  });
+};
+
 // Navigation Bar
 let Nav = () => {
   return (
     <div className="nav-bar-container">
       <ul className="nav-bar-list">
-        <li><a href="https://github.com/SirL0gic">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="https://github.com/SirL0gic">Projects</a></li>
-        <li><a href="https://github.com/SirL0gic">Contact</a></li>
+        <li><a onClick={scrollToTarget}>Contact</a></li>
       </ul>
     </div>
   );
@@ -50,7 +59,7 @@ let Social = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/abisali/" target="_blank">
+          <a href="https://www.instagram.com" target="_blank">
             <img
               src={instagramLogo}
               className="instagram-logo"
@@ -82,9 +91,9 @@ let HamburgerMenu = ({ darkModeStatus, handleToggle }) => {
         <li>
           <DarkModeToggle darkModeStatus={darkModeStatus} handleToggle={handleToggle} />
         </li>
-        <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">Home</a></li>
+        <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="/">Home</a></li>
         <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">Projects</a></li>
-        <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">Contact</a></li>
+        <li className="ham-menu-list-li"><a className="ham-menu-list-mob-a" onClick={scrollToTarget} >Contact</a></li>
         <li><Social/></li>
       </ul>
     </div>

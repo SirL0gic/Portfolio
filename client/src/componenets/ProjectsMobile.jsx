@@ -28,7 +28,7 @@ let project_list = [
 
   {
     id: 2,
-    image: "https://gcdnb.pbrd.co/images/4C39uQ4BYzKT.png?o=1",
+    image: "https://i.imgur.com/HK4uPVl.png",
     title: "Hire Hub",
     description:
       "Open-source job application system that simplifies the job search process!",
@@ -61,7 +61,7 @@ let project_list = [
 
   {
     id: 5,
-    image: "https://i.imgur.com/Bmpx7cC.png",
+    image: "https://i.imgur.com/5tRhebY.png",
     title: "Productivity Web App",
     description: "A productivity tool that helps you organise your tasks",
     stack: "React",

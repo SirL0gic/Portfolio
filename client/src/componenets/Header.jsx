@@ -1,21 +1,8 @@
 import React, { useState } from "react";
+import DarkModeToggle from "./ThemeMode";
 import gitHubLogo from "../assets/github.svg";
 import linkedinLogo from "../assets/linkedin.svg";
 import instagramLogo from "../assets/instagram.svg";
-
-// Dark Mode toggle
-let DarkModeToggle = ({ darkModeStatus, handleToggle }) => {
-  return (
-    <label
-      className={`toggle-switch ${
-        darkModeStatus ? "dark-theme" : "light-theme"
-      }`}
-    >
-      <input type="checkbox" checked={darkModeStatus} onChange={handleToggle} />
-      <span className="slider round"></span>
-    </label>
-  );
-};
 
 //Scroll Effect
 const scrollToTarget = (event) => {
@@ -142,8 +129,10 @@ let HamburgerMenu = ({ darkModeStatus, handleToggle }) => {
 
 // Main component
 let TopHeader = () => {
+  // State for holding theme status
   const [darkModeStatus, setDarkModeStatus] = useState(false);
 
+  // Dark mode switch handle
   const handleToggle = () => {
     setDarkModeStatus(!darkModeStatus);
   };

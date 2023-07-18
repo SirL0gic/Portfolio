@@ -75,3 +75,17 @@ export default TopHeader;
 ```
 
 With this setup, the `darkModeStatus` and `handleToggle` are provided to the `TopHeader` component through context from the `HomePage`. You can now remove the `darkModeStatus` and `handleToggle` state and functions from the `HomePage`, as they are now managed by the context provider. The `darkModeStatus` and `handleToggle` will be available in the `TopHeader` without the need for prop drilling.
+
+
+
+Having multiple instances of the ThemeProvider wrapping different parts of your app can cause issues with the context values being passed down to the components correctly. Each instance of the ThemeProvider creates its own separate context, and if you have multiple instances, they won't share the same state.
+
+When using the ThemeProvider to manage global state, it's important to have only one instance at the root level of your app. This ensures that all the components within your app can access the same state and update it accordingly.
+
+By wrapping the entire app with a single instance of the ThemeProvider, you ensure that the darkModeStatus and handleToggle values are consistent and can be accessed by all components through the useContext hook without any issues.
+
+in this case main.jsx is the main.jsx needs to have the provider and nothing else. 
+
+In this case, the top level refers to the highest level of your React application, where you wrap the entire app with the ThemeProvider to manage the global state. It's the starting point of your application, where you typically render the root component of your app.
+
+ the top level is in the index.js or index.jsx file, where you render the App component and wrap it with the BrowserRouter and ThemeProvider. 

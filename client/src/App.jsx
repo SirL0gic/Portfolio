@@ -7,11 +7,9 @@ import HomePage from "./componenets/Home";
 function App() {
   return (
     <>
-     <ThemeProvider> 
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
-      </ThemeProvider>
     </>
   );
 }

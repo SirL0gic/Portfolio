@@ -11,20 +11,8 @@ import FooterSection from "./Footer";
 
 let HomePage = () => {
 
-  // State for holding theme status
-  const [darkModeStatus, setDarkModeStatus] = useState(false);
-
-   // Dark mode switch handle
-   const handleToggle = () => {
-    setDarkModeStatus(!darkModeStatus);
-  };
-
-  const MyContext = createContext();
-  const sharedData = darkModeStatus;
-  // const sharedStatus = useContext(MyContext); use inside componetns
 
   return (
-    <MyContext.Provider value={sharedData}>
     <Container
       fluid
       className="main-container"
@@ -68,7 +56,6 @@ let HomePage = () => {
         </Col>
       </Row>
     </Container>
-    </MyContext.Provider>
   );
 };
 

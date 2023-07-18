@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { MyContext } from "../providers/ThemeContext"; 
 import DarkModeToggle from "./ThemeMode";
 import gitHubLogo from "../assets/github.svg";
 import linkedinLogo from "../assets/linkedin.svg";
@@ -129,13 +130,16 @@ let HamburgerMenu = ({ darkModeStatus, handleToggle }) => {
 
 // Main component
 let TopHeader = () => {
-  // State for holding theme status
-  const [darkModeStatus, setDarkModeStatus] = useState(false);
 
-  // Dark mode switch handle
-  const handleToggle = () => {
-    setDarkModeStatus(!darkModeStatus);
-  };
+  // // State for holding theme status
+  // const [darkModeStatus, setDarkModeStatus] = useState(false);
+
+  // // Dark mode switch handle
+  // const handleToggle = () => {
+  //   setDarkModeStatus(!darkModeStatus);
+  // };
+
+  const { darkModeStatus, handleToggle } = useContext(MyContext); // Access context values
 
   return (
     <div className="flex-box-header">

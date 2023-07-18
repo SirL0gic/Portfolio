@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
+import { ThemeProvider } from "../providers/ThemeContext";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TopHeader from "./Header";
@@ -10,9 +11,8 @@ import QuestionsSection from "./Questions";
 import FooterSection from "./Footer";
 
 let HomePage = () => {
-
-
   return (
+    <ThemeProvider>
     <Container
       fluid
       className="main-container"
@@ -56,6 +56,7 @@ let HomePage = () => {
         </Col>
       </Row>
     </Container>
+    </ThemeProvider>
   );
 };
 

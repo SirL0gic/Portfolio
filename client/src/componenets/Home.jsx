@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useContext, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TopHeader from "./Header";
@@ -10,8 +10,28 @@ import QuestionsSection from "./Questions";
 import FooterSection from "./Footer";
 
 let HomePage = () => {
+
+  // State for holding theme status
+  const [darkModeStatus, setDarkModeStatus] = useState(false);
+
+   // Dark mode switch handle
+   const handleToggle = () => {
+    setDarkModeStatus(!darkModeStatus);
+  };
+
+  const MyContext = createContext();
+  const sharedData = darkModeStatus;
+  // const sharedStatus = useContext(MyContext); use inside componetns
+
   return (
-    <Container fluid className="main-container">
+    <MyContext.Provider value={sharedData}>
+    <Container
+      fluid
+      className="main-container"
+      // style={{
+      //   background: "#1E1F1F",
+      // }}
+    >
       <Row className="row-one">
         <Col className="col-one" lg={12}>
           <TopHeader />
@@ -48,6 +68,7 @@ let HomePage = () => {
         </Col>
       </Row>
     </Container>
+    </MyContext.Provider>
   );
 };
 

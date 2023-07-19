@@ -1,12 +1,16 @@
-import React from "react";
+import React, { createContext, useContext, useState } from "react";
+import { MyContext } from "../providers/ThemeContext";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import lineLogo from "../assets/line.svg";
 import gitHubLogo from "../assets/github.svg";
 import linkedinLogo from "../assets/linkedin.svg";
 import instagramLogo from "../assets/instagram.svg";
+import gitHubLogoDark from "../assets/github-dark.svg"
+import linkedinLogoDark from "../assets/link-dark.svg";
 
 let Nav = () => {
+  const { darkModeStatus } = useContext(MyContext);
   return (
     <div id="footer-menu" className="nav-bar-container">
       <ul className="nav-bar-list">
@@ -25,6 +29,7 @@ let Nav = () => {
 };
 
 let Social = () => {
+  const { darkModeStatus } = useContext(MyContext);
   return (
     <div id="footer-social-media" className="social-media-container">
       <ul className="social-media-list">
@@ -57,6 +62,7 @@ let Social = () => {
 };
 
 let FooterSection = () => {
+  const { darkModeStatus } = useContext(MyContext);
   return (
     <Container className="footer-container">
       <Row className="row-footer-one">

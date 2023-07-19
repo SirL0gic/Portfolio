@@ -17,9 +17,12 @@ const scrollToTarget = (event) => {
 
 // Navigation Bar
 let Nav = () => {
+  const { darkModeStatus } = useContext(MyContext);
   return (
     <div className="nav-bar-container">
-      <ul className="nav-bar-list">
+      <ul
+        className= {darkModeStatus ? "nav-bar-list-dark" : "nav-bar-list"}
+      >
         <li>
           <a href="/">Home</a>
         </li>

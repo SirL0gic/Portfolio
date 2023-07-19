@@ -431,10 +431,25 @@
   font-size: 20px;
 }
 
+.nav-bar-list-dark {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  font-size: 20px;
+}
+
 .nav-bar-list a {
   font-family: var(--main-font);
   text-decoration: none;
   color: var(--header-font-color);
+  position: relative;
+}
+
+.nav-bar-list-dark a {
+  font-family: var(--main-font);
+  text-decoration: none;
+  color: white;
   position: relative;
 }
 
@@ -452,6 +467,10 @@
 }
 
 .nav-bar-list a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-bar-list-dark a:hover::after {
   transform: scaleX(1);
 }
 
@@ -561,6 +580,7 @@
 
 .menu-items.open {
   transform: scaleX(1);
+  height: 100vh;
 }
 
 .tech-stack-headings {

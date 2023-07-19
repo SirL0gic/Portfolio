@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 import { MyContext } from "../providers/ThemeContext";
 import DarkModeToggle from "./ThemeMode";
 import gitHubLogo from "../assets/github.svg";
-import gitHubLogoDark from "../assets/github-dark.svg"
+import gitHubLogoDark from "../assets/github-dark.svg";
 import linkedinLogo from "../assets/linkedin.svg";
 import linkedinLogoDark from "../assets/link-dark.svg";
 import instagramLogo from "../assets/instagram.svg";
@@ -24,9 +24,7 @@ let Nav = () => {
   const { darkModeStatus } = useContext(MyContext);
   return (
     <div className="nav-bar-container">
-      <ul
-        className= {darkModeStatus ? "nav-bar-list-dark" : "nav-bar-list"}
-      >
+      <ul className={darkModeStatus ? "nav-bar-list-dark" : "nav-bar-list"}>
         <li>
           <a href="/">Home</a>
         </li>
@@ -51,7 +49,11 @@ let Social = () => {
       <ul className="social-media-list">
         <li>
           <a href="https://github.com/SirL0gic" target="_blank">
-            <img src={darkModeStatus ? gitHubLogoDark : gitHubLogo} className="github-logo" alt="github logo" />
+            <img
+              src={darkModeStatus ? gitHubLogoDark : gitHubLogo}
+              className="github-logo"
+              alt="github logo"
+            />
           </a>
         </li>
         <li>
@@ -99,10 +101,30 @@ let HamburgerMenu = ({ darkModeStatus, handleToggle }) => {
       className={`hamburger-menu ${isOpen ? "open" : ""}`}
       onClick={toggleMenu}
     >
-      <div className="hamburger-line"></div>
-      <div className="hamburger-line"></div>
-      <div className="hamburger-line"></div>
-      <ul className={`menu-items ${isOpen ? "open" : ""}`}>
+      <div
+        className="hamburger-line"
+        style={{
+          background: darkModeStatus ? "white" : "",
+        }}
+      ></div>
+      <div
+        className="hamburger-line"
+        style={{
+          background: darkModeStatus ? "white" : "",
+        }}
+      ></div>
+      <div
+        className="hamburger-line"
+        style={{
+          background: darkModeStatus ? "white" : "",
+        }}
+      ></div>
+      <ul
+        className={`menu-items ${isOpen ? "open" : ""}`}
+        // style={{
+        //   backgroundColor: darkModeStatus ? "1E1F1F" : "",
+        // }}
+      >
         <li>
           <DarkModeToggle
             darkModeStatus={darkModeStatus}

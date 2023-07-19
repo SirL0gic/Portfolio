@@ -130,7 +130,22 @@ let ProjectSectionMobile = () => {
       <Row className="row-projects-carousel">
         <Col sm={12}>
           <div className="all-carousel">
-            <Carousel interval={6000}>
+            <Carousel
+              interval={6000}
+              nextIcon={
+                <img
+                  src="https://img.icons8.com/ios-filled/30/forward--v1.png"
+                  alt="Next"
+                />
+              }
+              prevIcon={
+                <img
+                  style={{ transform: "rotate(180deg)" }}
+                  src="https://img.icons8.com/ios-filled/30/000000/forward--v1.png"
+                  alt="Prev"
+                />
+              }
+            >
               <Carousel.Item>
                 <ProjectCard
                   img={project_list[0].image}

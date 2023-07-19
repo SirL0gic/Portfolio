@@ -6,6 +6,8 @@ import gitHubLogoDark from "../assets/github-dark.svg"
 import linkedinLogo from "../assets/linkedin.svg";
 import linkedinLogoDark from "../assets/link-dark.svg";
 import instagramLogo from "../assets/instagram.svg";
+import twitterLogo from "../assets/twitter.svg";
+import twitterLogoDark from "../assets/twitter-dark.svg";
 
 //Scroll Effect
 const scrollToTarget = (event) => {
@@ -62,11 +64,11 @@ let Social = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com" target="_blank">
+          <a href="https://www.twitter.com" target="_blank">
             <img
-              src={instagramLogo}
+              src={darkModeStatus ? twitterLogoDark : twitterLogo}
               className="instagram-logo"
-              alt="instagram logo"
+              alt="twitterlogo"
             />
           </a>
         </li>

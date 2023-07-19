@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
+import { MyContext } from "../providers/ThemeContext";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -19,6 +20,7 @@ import mongoLogo from "../assets/mongo.svg";
 import CodeLogo from "../assets/vscode.svg";
 
 let TechStackSection = () => {
+  const { darkModeStatus } = useContext(MyContext);
   useEffect(() => {
     AOS.init(); // Initialize AOS library
   }, []);

@@ -8,6 +8,8 @@ import linkedinLogo from "../assets/linkedin.svg";
 import instagramLogo from "../assets/instagram.svg";
 import gitHubLogoDark from "../assets/github-dark.svg"
 import linkedinLogoDark from "../assets/link-dark.svg";
+import twitterLogo from "../assets/twitter.svg";
+import twitterLogoDark from "../assets/twitter-dark.svg";
 
 let Nav = () => {
   const { darkModeStatus } = useContext(MyContext);

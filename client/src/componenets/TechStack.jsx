@@ -18,6 +18,9 @@ import figmaLogo from "../assets/figma.svg";
 import githubLogo from "../assets/hub.svg";
 import mongoLogo from "../assets/mongo.svg";
 import CodeLogo from "../assets/vscode.svg";
+import awsDark from "../assets/aws-dark.svg";
+import gitDark from "../assets/git-dark.svg";
+import nodeDark from "../assets/node-dark.svg"; 
 
 let TechStackSection = () => {
   const { darkModeStatus } = useContext(MyContext);
@@ -30,8 +33,21 @@ let TechStackSection = () => {
       <Row className="row-five">
         <Col className="col-six" lg={12} sm={6}>
           <div className="tech-stack-headings">
-            <h1>My Tech Stack</h1>
-            <h2> Technologies I love working with ❤️</h2>
+            <h1
+              style={{
+                color: darkModeStatus ? "white" : "",
+              }}
+            >
+              My Tech Stack
+            </h1>
+            <h2
+              style={{
+                color: darkModeStatus ? "grey" : "",
+              }}
+            >
+              {" "}
+              Technologies I love working with ❤️
+            </h2>
           </div>
         </Col>
       </Row>
@@ -56,7 +72,7 @@ let TechStackSection = () => {
               <ul className="tech-items-list-two">
                 <li>
                   {" "}
-                  <img src={nodeLogo} alt="node" className="node-logo" />
+                  <img src={darkModeStatus ? nodeDark : nodeLogo} alt="node" className="node-logo" />
                 </li>
                 <li>
                   {" "}
@@ -64,7 +80,7 @@ let TechStackSection = () => {
                 </li>
                 <li>
                   {" "}
-                  <img src={gitLogo} alt="git" className="git-logo" />
+                  <img src={gitLogo } alt="git" className="git-logo" />
                 </li>
               </ul>
             </div>
@@ -81,7 +97,7 @@ let TechStackSection = () => {
                 </li>
                 <li>
                   {" "}
-                  <img src={awsLogo} alt="aws" />
+                  <img src={darkModeStatus ? awsDark : awsLogo } alt="aws" />
                 </li>
                 <li>
                   {" "}
@@ -99,7 +115,7 @@ let TechStackSection = () => {
                 </li>
                 <li>
                   {" "}
-                  <img src={githubLogo} alt="github" />
+                  <img src={darkModeStatus ? gitDark : githubLogo} alt="github" />
                 </li>
               </ul>
             </div>

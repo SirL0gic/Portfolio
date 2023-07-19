@@ -76,7 +76,12 @@ let project_list = [
 let ProjectCard = (props) => {
   return (
     <Card className="project-card" style={{ width: "22rem" }}>
-      <Card.Img className="project-card-image" variant="top" src={props.img} alt="project-image" />
+      <Card.Img
+        className="project-card-image"
+        variant="top"
+        src={props.img}
+        alt="project-image"
+      />
       <Card.Body>
         <Card.Title className="card-title">{props.title}</Card.Title>
         <Card.Text className="card-dec">{props.description}</Card.Text>
@@ -85,7 +90,7 @@ let ProjectCard = (props) => {
         </Card.Text>
         <div className="card-links-flex-box">
           {" "}
-          <img src={linkImage} alt="link-img"/>
+          <img src={linkImage} alt="link-img" />
           <a className="card-link-one" href={props.live}>
             Link Preview
           </a>
@@ -99,6 +104,7 @@ let ProjectCard = (props) => {
 };
 
 let ProjectsSectionDesktop = () => {
+  const { darkModeStatus } = useContext(MyContext);
   useEffect(() => {
     AOS.init(); // Initialize AOS library
   }, []);
@@ -108,8 +114,16 @@ let ProjectsSectionDesktop = () => {
       <Row className="row-projects-section-title">
         <Col className="col-projects-title" lg={12}>
           <div className="project-title-box">
-            <h2>Projects</h2>
-            <h3>Where code comes to life</h3>
+            <h2
+              style={{
+                color: darkModeStatus ? "white" : "",
+              }}
+            >
+              Projects
+            </h2>
+            <h3 style={{
+                color: darkModeStatus ? "grey" : "",
+              }}>Where code comes to life</h3>
           </div>
         </Col>
       </Row>

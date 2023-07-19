@@ -2,7 +2,9 @@ import React, { createContext, useContext, useState } from "react";
 import { MyContext } from "../providers/ThemeContext";
 import DarkModeToggle from "./ThemeMode";
 import gitHubLogo from "../assets/github.svg";
+import gitHubLogoDark from "../assets/github-dark.svg"
 import linkedinLogo from "../assets/linkedin.svg";
+import linkedinLogoDark from "../assets/link-dark.svg";
 import instagramLogo from "../assets/instagram.svg";
 
 //Scroll Effect
@@ -41,18 +43,19 @@ let Nav = () => {
 
 // Social Media Icons
 let Social = () => {
+  const { darkModeStatus } = useContext(MyContext);
   return (
     <div className="social-media-container">
       <ul className="social-media-list">
         <li>
           <a href="https://github.com/SirL0gic" target="_blank">
-            <img src={gitHubLogo} className="github-logo" alt="github logo" />
+            <img src={darkModeStatus ? gitHubLogoDark : gitHubLogo} className="github-logo" alt="github logo" />
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/abisali/" target="_blank">
             <img
-              src={linkedinLogo}
+              src={darkModeStatus ? linkedinLogoDark : linkedinLogo}
               className="linkedin-logo"
               alt="linkedin logo"
             />

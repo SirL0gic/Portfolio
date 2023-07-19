@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
+import { MyContext } from "../providers/ThemeContext";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
@@ -121,9 +122,13 @@ let ProjectsSectionDesktop = () => {
             >
               Projects
             </h2>
-            <h3 style={{
+            <h3
+              style={{
                 color: darkModeStatus ? "grey" : "",
-              }}>Where code comes to life</h3>
+              }}
+            >
+              Where code comes to life
+            </h3>
           </div>
         </Col>
       </Row>
@@ -200,7 +205,13 @@ let ProjectsSectionDesktop = () => {
             />
           </Col>
           <br />
-          <a className="see-all-proj" href="https://github.com/SirL0gic">
+          <a
+            style={{
+              color: darkModeStatus ? "white" : "",
+            }}
+            className="see-all-proj"
+            href="https://github.com/SirL0gic"
+          >
             See All Projects
           </a>
         </Row>

@@ -3,6 +3,7 @@ import { MyContext } from "../providers/ThemeContext";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import lineLogo from "../assets/line.svg";
+import lineLogoDark from "../assets/line-dark.svg";
 import gitHubLogo from "../assets/github.svg";
 import linkedinLogo from "../assets/linkedin.svg";
 import instagramLogo from "../assets/instagram.svg";
@@ -15,7 +16,7 @@ let Nav = () => {
   const { darkModeStatus } = useContext(MyContext);
   return (
     <div id="footer-menu" className="nav-bar-container">
-      <ul className="nav-bar-list">
+      <ul className={darkModeStatus ? "nav-bar-list-dark" : "nav-bar-list"}>
         <li>
           <a href="/">Home</a>
         </li>
@@ -37,13 +38,13 @@ let Social = () => {
       <ul className="social-media-list">
         <li>
           <a href="https://github.com/SirL0gic" target="_blank">
-            <img src={gitHubLogo} className="github-logo" alt="github logo" />
+            <img src={darkModeStatus ? gitHubLogoDark : gitHubLogo} className="github-logo" alt="github logo" />
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/abisali/" target="_blank">
             <img
-              src={linkedinLogo}
+              src={darkModeStatus ? linkedinLogoDark : linkedinLogo}
               className="linkedin-logo"
               alt="linkedin logo"
             />
@@ -52,9 +53,9 @@ let Social = () => {
         <li>
           <a href="https://www.instagram.com" target="_blank">
             <img
-              src={instagramLogo}
+              src={darkModeStatus ? twitterLogoDark : twitterLogo}
               className="instagram-logo"
-              alt="instagram logo"
+              alt="twitter logo"
             />
           </a>
         </li>
@@ -69,7 +70,7 @@ let FooterSection = () => {
     <Container className="footer-container">
       <Row className="row-footer-one">
         <Col className="col-footer-one" lg={12}>
-          <img src={lineLogo} alt="line" className="line-image" />
+          <img src={ darkModeStatus ? lineLogoDark : lineLogo} alt="line" className="line-image" />
         </Col>
       </Row>
 

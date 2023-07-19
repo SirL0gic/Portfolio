@@ -1,7 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { createContext, useContext, useState, useEffect, useRef } from "react";
+import { MyContext } from "../providers/ThemeContext";
 import emailLogo from "../assets/email.svg";
 
 const QuestionsSection = () => {
+  const { darkModeStatus } = useContext(MyContext);
   const emailRef = useRef(null);
 
   useEffect(() => {
@@ -28,7 +30,9 @@ const QuestionsSection = () => {
 
   return (
     <div id="q-box" className="questions-box">
-      <h1>For any questions:</h1>
+      <h1 style={{
+                color: darkModeStatus ? "white" : "",
+              }}>For any questions:</h1>
       <img
         src={emailLogo}
         alt="mail"

@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
+import { MyContext } from "../providers/ThemeContext";
 import { Container, Row, Col, Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
@@ -71,9 +72,15 @@ let project_list = [
 ];
 
 let ProjectCard = (props) => {
+  const { darkModeStatus } = useContext(MyContext);
   return (
     <Card className="project-card" style={{ width: "22rem" }}>
-      <Card.Img className="project-card-image" variant="top" src={props.img} alt="project-image" />
+      <Card.Img
+        className="project-card-image"
+        variant="top"
+        src={props.img}
+        alt="project-image"
+      />
       <Card.Body>
         <Card.Title className="card-title">{props.title}</Card.Title>
         <Card.Text className="card-dec">{props.description}</Card.Text>
@@ -96,13 +103,26 @@ let ProjectCard = (props) => {
 };
 
 let ProjectSectionMobile = () => {
+  const { darkModeStatus } = useContext(MyContext);
   return (
     <Container className="project-section-container-mobile">
       <Row className="row-projects-section-title">
         <Col className="col-projects-title" lg={12} sm={12}>
           <div className="project-title-box">
-            <h2>Projects</h2>
-            <h3>Where code comes to life</h3>
+            <h2
+              style={{
+                color: darkModeStatus ? "white" : "",
+              }}
+            >
+              Projects
+            </h2>
+            <h3
+              style={{
+                color: darkModeStatus ? "grey" : "",
+              }}
+            >
+              Where code comes to life
+            </h3>
           </div>
         </Col>
       </Row>
@@ -181,7 +201,15 @@ let ProjectSectionMobile = () => {
           </div>
         </Col>
         <br />
-        <a className="see-all-proj" href="https://github.com/SirL0gic">See All Projects</a>
+        <a
+          style={{
+            color: darkModeStatus ? "white" : "",
+          }}
+          className="see-all-proj"
+          href="https://github.com/SirL0gic"
+        >
+          See All Projects
+        </a>
       </Row>
     </Container>
   );

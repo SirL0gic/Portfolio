@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import linkImage from "../assets/link.svg";
+import linkImageDark from "../assets/linkimage-dark.svg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -117,7 +118,7 @@ let ProjectCard = (props) => {
         </Card.Text>
         <div className="card-links-flex-box">
           {" "}
-          <img src={linkImage} alt="link-img" />
+          <img src={darkModeStatus ? linkImageDark : linkImage } alt="link-img" />
           <a
             className="card-link-one"
             href={props.live}

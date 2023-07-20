@@ -121,9 +121,6 @@ let HamburgerMenu = ({ darkModeStatus, handleToggle }) => {
       ></div>
       <ul
         className={`menu-items ${isOpen ? "open" : ""}`}
-        // style={{
-        //   backgroundColor: darkModeStatus ? "1E1F1F" : "",
-        // }}
       >
         <li>
           <DarkModeToggle

@@ -121,6 +121,9 @@ let HamburgerMenu = ({ darkModeStatus, handleToggle }) => {
       ></div>
       <ul
         className={`menu-items ${isOpen ? "open" : ""}`}
+        style={{
+          backgroundColor: darkModeStatus ? "#1E1F1F" : "white",
+        }}
       >
         <li>
           <DarkModeToggle
@@ -129,12 +132,24 @@ let HamburgerMenu = ({ darkModeStatus, handleToggle }) => {
           />
         </li>
         <li className="ham-menu-list-li">
-          <a className="ham-menu-list-mob-a" href="/">
+          <a
+            className="ham-menu-list-mob-a"
+            href="/"
+            style={{
+              color: darkModeStatus ? "white" : "#676667",
+            }}
+          >
             Home
           </a>
         </li>
         <li className="ham-menu-list-li">
-          <a className="ham-menu-list-mob-a" href="https://github.com/SirL0gic">
+          <a
+            className="ham-menu-list-mob-a"
+            href="https://github.com/SirL0gic"
+            style={{
+              color: darkModeStatus ? "white" : "#676667",
+            }}
+          >
             Projects
           </a>
         </li>
@@ -143,6 +158,9 @@ let HamburgerMenu = ({ darkModeStatus, handleToggle }) => {
             className="ham-menu-list-mob-a"
             href="mailto:someone@yoursite.com"
             onClick={scrollToTarget}
+            style={{
+              color: darkModeStatus ? "white" : "#676667",
+            }}
           >
             Contact
           </a>

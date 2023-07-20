@@ -7,7 +7,7 @@ import lineLogoDark from "../assets/line-dark.svg";
 import gitHubLogo from "../assets/github.svg";
 import linkedinLogo from "../assets/linkedin.svg";
 import instagramLogo from "../assets/instagram.svg";
-import gitHubLogoDark from "../assets/github-dark.svg"
+import gitHubLogoDark from "../assets/github-dark.svg";
 import linkedinLogoDark from "../assets/link-dark.svg";
 import twitterLogo from "../assets/twitter.svg";
 import twitterLogoDark from "../assets/twitter-dark.svg";
@@ -38,7 +38,11 @@ let Social = () => {
       <ul className="social-media-list">
         <li>
           <a href="https://github.com/SirL0gic" target="_blank">
-            <img src={darkModeStatus ? gitHubLogoDark : gitHubLogo} className="github-logo" alt="github logo" />
+            <img
+              src={darkModeStatus ? gitHubLogoDark : gitHubLogo}
+              className="github-logo"
+              alt="github logo"
+            />
           </a>
         </li>
         <li>
@@ -70,7 +74,11 @@ let FooterSection = () => {
     <Container className="footer-container">
       <Row className="row-footer-one">
         <Col className="col-footer-one" lg={12}>
-          <img src={ darkModeStatus ? lineLogoDark : lineLogo} alt="line" className="line-image" />
+          <img
+            src={darkModeStatus ? lineLogoDark : lineLogo}
+            alt="line"
+            className="line-image"
+          />
         </Col>
       </Row>
 
@@ -85,7 +93,14 @@ let FooterSection = () => {
 
         <Col className="col-footer-four" lg={4} sm={12}>
           <div className="name-box">
-            <p className="name-text">Designed by @Abis</p>
+            <p
+              className="name-text"
+              style={{
+                color: darkModeStatus ? "white" : "",
+              }}
+            >
+              Designed by @Abis
+            </p>
           </div>
         </Col>
       </Row>

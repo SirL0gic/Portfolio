@@ -75,27 +75,65 @@ let project_list = [
 ];
 
 let ProjectCard = (props) => {
+  const { darkModeStatus } = useContext(MyContext);
   return (
-    <Card className="project-card" style={{ width: "22rem" }}>
+    <Card
+      className="project-card"
+      style={{
+        width: "22rem",
+        background: darkModeStatus ? "#363636" : "white",
+      }}
+    >
       <Card.Img
         className="project-card-image"
         variant="top"
         src={props.img}
         alt="project-image"
       />
-      <Card.Body>
-        <Card.Title className="card-title">{props.title}</Card.Title>
-        <Card.Text className="card-dec">{props.description}</Card.Text>
-        <Card.Text className="card-teach-stack">
+      <Card.Body style={{ borderRadius: "25px" }}>
+        <Card.Title
+          className="card-title"
+          style={{
+            color: darkModeStatus ? "white" : "",
+          }}
+        >
+          {props.title}
+        </Card.Title>
+        <Card.Text
+          className="card-dec"
+          style={{
+            color: darkModeStatus ? "#dbdbda" : "",
+          }}
+        >
+          {props.description}
+        </Card.Text>
+        <Card.Text
+          className="card-teach-stack"
+          style={{
+            color: darkModeStatus ? "white" : "",
+          }}
+        >
           Tech Stack: {props.stack}
         </Card.Text>
         <div className="card-links-flex-box">
           {" "}
           <img src={linkImage} alt="link-img" />
-          <a className="card-link-one" href={props.live}>
+          <a
+            className="card-link-one"
+            href={props.live}
+            style={{
+              color: darkModeStatus ? "white" : "",
+            }}
+          >
             Link Preview
           </a>
-          <a className="card-link-two" href={props.code}>
+          <a
+            className="card-link-two"
+            href={props.code}
+            style={{
+              color: darkModeStatus ? "white" : "",
+            }}
+          >
             View Code
           </a>
         </div>

@@ -13,7 +13,7 @@ let project_list = [
     description:
       "An e-commerce website created for a sustainable fashion brand on Shopify.",
     stack: "Liquid - Node - HTML - CSS - JS",
-    live: "elemnts.com",
+    live: "https://elemnts.com",
     code: "/",
   },
 

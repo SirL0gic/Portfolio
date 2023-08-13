@@ -62,7 +62,7 @@ let project_list = [
 
   {
     id: 5,
-    image: "https://i.imgur.com/PLmsCUY.png",
+    image: "https://i.imgur.com/XGm9GQD.png",
     title: "Fuel Watch UAE",
     description: "The Fuel Price Tracker is a website that provides real-time information on current petrol prices in the United Arab Emirates.",
     stack: "React - Node - MongoDB - AWS",

@@ -62,12 +62,12 @@ let project_list = [
 
   {
     id: 5,
-    image: "https://i.imgur.com/5tRhebY.png",
-    title: "Productivity Web App",
-    description: "A productivity tool that helps you organise your tasks",
-    stack: "React",
-    live: "https://1drv.ms/v/s!Apck3DEmMLfWih9YJxfmPuTVJFDc?e=gaYp7M",
-    code: "https://github.com/SirL0gic/Productivity-App",
+    image: "https://i.imgur.com/PLmsCUY.png",
+    title: "Fuel Watch UAE",
+    description: "The Fuel Price Tracker is a website that provides real-time information on current petrol prices in the United Arab Emirates.",
+    stack: "React - Node - MongoDB - AWS",
+    live: "https://fuelwatch.xyz/",
+    code: "https://github.com/SirL0gic",
   },
 ];
 

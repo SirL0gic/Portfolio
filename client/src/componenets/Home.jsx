@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { MyContext, ThemeProvider } from "../providers/ThemeContext";
+import { MyContext } from "../providers/ThemeContext";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -19,7 +19,7 @@ let HomePage = () => {
   useEffect(() => {
     AOS.init(); // Initialize AOS library
   }, [])
-  
+
   const { darkModeStatus } = useContext(MyContext);
 
   return (

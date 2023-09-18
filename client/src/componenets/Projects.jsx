@@ -1,4 +1,4 @@
-import React, {useContext, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { MyContext } from "../providers/ThemeContext";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -52,21 +52,21 @@ let project_list = [
 
   {
     id: 4,
-    image:
-      "https://camo.githubusercontent.com/a0a3bb45497d466fc174f7a6e347759200060b08b550869ada5dba483499a399/68747470733a2f2f692e696d6775722e636f6d2f6e334b345478612e706e67",
+    image: "https://i.imgur.com/fXgl9oo.png",
     title: "The React Post",
-    description: "News web application that displays latest news articles",
-    stack: "React",
-    live: "https://1drv.ms/v/s!Apck3DEmMLfWihxii4hcayJXfowz?e=NLos4g",
+    description: "Web application that displays latest news article.",
+    stack: "React, Node",
+    live: "https://thereactpost.xyz/",
     code: "https://github.com/SirL0gic/The-React-Post",
   },
 
   {
     id: 5,
-    image: "https://i.imgur.com/XGm9GQD.png",
+    image: "https://i.imgur.com/YiHx6gN.png",
     title: "Fuel Watch UAE",
-    description: "The Fuel Price Tracker provides real-time information on petrol prices in the UAE",
-    stack: "React - Node - MongoDB - AWS",
+    description:
+      "The Fuel Price Tracker provides real-time information on petrol prices in the UAE.",
+    stack: "React",
     live: "https://fuelwatch.xyz/",
     code: "https://github.com/SirL0gic",
   },
@@ -88,7 +88,7 @@ let ProjectCard = (props) => {
         src={props.img}
         alt="project-image"
         width="350px"
-        height="180px"
+        height="200px"
       />
       <Card.Body style={{ borderRadius: "25px" }}>
         <Card.Title
@@ -117,7 +117,10 @@ let ProjectCard = (props) => {
         </Card.Text>
         <div className="card-links-flex-box">
           {" "}
-          <img src={darkModeStatus ? linkImageDark : linkImage } alt="link-img" />
+          <img
+            src={darkModeStatus ? linkImageDark : linkImage}
+            alt="link-img"
+          />
           <a
             className="card-link-one"
             href={props.live}
@@ -168,88 +171,88 @@ let ProjectsSectionDesktop = () => {
         </Col>
       </Row>
       {/* <div data-aos="flip-up" data-aos-duration="1000"> */}
-        <Row className="row-projects-list-one">
-          <Col className="col-card-hold" lg={4}>
-            <ProjectCard
-              img={project_list[0].image}
-              title={project_list[0].title}
-              description={project_list[0].description}
-              stack={project_list[0].stack}
-              live={project_list[0].live}
-              code={project_list[0].code}
-            />
-          </Col>
-          <Col className="col-card-hold" lg={4}>
-            {" "}
-            <ProjectCard
-              img={project_list[1].image}
-              title={project_list[1].title}
-              description={project_list[1].description}
-              stack={project_list[1].stack}
-              live={project_list[1].live}
-              code={project_list[1].code}
-            />
-          </Col>
-          <Col className="col-card-hold" lg={4}>
-            {" "}
-            <ProjectCard
-              img={project_list[2].image}
-              title={project_list[2].title}
-              description={project_list[2].description}
-              stack={project_list[2].stack}
-              live={project_list[2].live}
-              code={project_list[2].code}
-            />
-          </Col>
-        </Row>
+      <Row className="row-projects-list-one">
+        <Col className="col-card-hold" lg={4}>
+          <ProjectCard
+            img={project_list[0].image}
+            title={project_list[0].title}
+            description={project_list[0].description}
+            stack={project_list[0].stack}
+            live={project_list[0].live}
+            code={project_list[0].code}
+          />
+        </Col>
+        <Col className="col-card-hold" lg={4}>
+          {" "}
+          <ProjectCard
+            img={project_list[1].image}
+            title={project_list[1].title}
+            description={project_list[1].description}
+            stack={project_list[1].stack}
+            live={project_list[1].live}
+            code={project_list[1].code}
+          />
+        </Col>
+        <Col className="col-card-hold" lg={4}>
+          {" "}
+          <ProjectCard
+            img={project_list[2].image}
+            title={project_list[2].title}
+            description={project_list[2].description}
+            stack={project_list[2].stack}
+            live={project_list[2].live}
+            code={project_list[2].code}
+          />
+        </Col>
+      </Row>
       {/* </div> */}
 
       {/* <div data-aos="flip-up" data-aos-duration="1000"> */}
-        <Row className="row-projects-list-two">
-          <Col className="col-card-hold" lg={4}>
-            {" "}
-            <ProjectCard
-              img={project_list[3].image}
-              title={project_list[3].title}
-              description={project_list[3].description}
-              stack={project_list[3].stack}
-              live={project_list[3].live}
-              code={project_list[3].code}
-            />
-          </Col>
-          <Col className="col-card-hold" lg={4}>
-            {" "}
-            <ProjectCard
-              img={project_list[4].image}
-              title={project_list[4].title}
-              description={project_list[4].description}
-              stack={project_list[4].stack}
-              live={project_list[4].live}
-              code={project_list[4].code}
-            />
-          </Col>
-          <Col className="col-card-hold" lg={4}>
-            {" "}
-            <ProjectCard
-              img={project_list[5].image}
-              title={project_list[5].title}
-              description={project_list[5].description}
-              stack={project_list[5].stack}
-              live={project_list[5].live}
-              code={project_list[5].code}
-            />
-          </Col>
-          <br />
-          <a
-            style={{
-              color: darkModeStatus ? "white" : "",
-            }}
-            className="see-all-proj"
-            href="https://github.com/SirL0gic"
-          >
-            See All Projects
-          </a>
-        </Row>
+      <Row className="row-projects-list-two">
+        <Col className="col-card-hold" lg={4}>
+          {" "}
+          <ProjectCard
+            img={project_list[3].image}
+            title={project_list[3].title}
+            description={project_list[3].description}
+            stack={project_list[3].stack}
+            live={project_list[3].live}
+            code={project_list[3].code}
+          />
+        </Col>
+        <Col className="col-card-hold" lg={4}>
+          {" "}
+          <ProjectCard
+            img={project_list[4].image}
+            title={project_list[4].title}
+            description={project_list[4].description}
+            stack={project_list[4].stack}
+            live={project_list[4].live}
+            code={project_list[4].code}
+          />
+        </Col>
+        <Col className="col-card-hold" lg={4}>
+          {" "}
+          <ProjectCard
+            img={project_list[5].image}
+            title={project_list[5].title}
+            description={project_list[5].description}
+            stack={project_list[5].stack}
+            live={project_list[5].live}
+            code={project_list[5].code}
+          />
+        </Col>
+        <br />
+        <a
+          style={{
+            color: darkModeStatus ? "white" : "",
+          }}
+          className="see-all-proj"
+          href="https://github.com/SirL0gic?tab=repositories"
+        >
+          See All Projects
+        </a>
+      </Row>
       {/* </div> */}
     </Container>
   );

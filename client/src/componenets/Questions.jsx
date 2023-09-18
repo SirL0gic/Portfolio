@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, useRef } from "react";
+import React, {useContext, useEffect, useRef } from "react";
 import { MyContext } from "../providers/ThemeContext";
 import emailLogo from "../assets/email.svg";
 

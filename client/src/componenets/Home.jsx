@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { MyContext, ThemeProvider } from "../providers/ThemeContext";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,7 +11,15 @@ import ProjectsSectionDesktop from "./Projects";
 import QuestionsSection from "./Questions";
 import FooterSection from "./Footer";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../App.css";
+
 let HomePage = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS library
+  }, [])
+  
   const { darkModeStatus } = useContext(MyContext);
 
   return (
@@ -40,11 +48,6 @@ let HomePage = () => {
       <Row className="row-projects-desktop">
         <Col className="col-projects-desktop" lg={12}>
           <ProjectsSectionDesktop />
-        </Col>
-      </Row>
-      <Row className="row-projects-mobile">
-        <Col className="col-projects-mobile" lg={12}>
-          {/* <ProjectSectionMobile /> */}
         </Col>
       </Row>
       <Row className="row-questions">

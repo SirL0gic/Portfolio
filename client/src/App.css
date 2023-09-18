@@ -1,3 +1,8 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* Media query for mobile devices  */
 @media only screen and (max-width: 767px) {
   .hamburger-menu {
@@ -39,7 +44,6 @@
     left: 20px;
     width: 100% !important;
     height: 70%;
-    /* background-color: rgb(255, 255, 255) !important; */
     list-style-type: none;
     padding: 10px;
     transform-origin: left center;
@@ -55,7 +59,6 @@
     list-style: none !important;
     font-family: var(--main-font) !important;
     text-decoration: none !important;
-    /* color: var(--header-font-color) !important; */
   }
 
   .ham-menu-list-li {
@@ -648,7 +651,7 @@
 }
 
 .row-projects-list-two {
-  margin-top: 60px !important;
+  margin-top: 10px !important;
 }
 
 .col-card-hold {

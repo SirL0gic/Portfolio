@@ -3,9 +3,6 @@ import { MyContext } from "../providers/ThemeContext";
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 import htmlLogo from "../assets/html.svg";
 import cssLogo from "../assets/css.svg";
 import jsLogo from "../assets/js.svg";
@@ -24,10 +21,6 @@ import nodeDark from "../assets/node-dark.svg";
 
 let TechStackSection = () => {
   const { darkModeStatus } = useContext(MyContext);
-  useEffect(() => {
-    AOS.init(); // Initialize AOS library
-  }, []);
-
   return (
     <Container className="tech-stack-container">
       <Row className="row-five">

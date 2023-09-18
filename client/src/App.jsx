@@ -1,8 +1,7 @@
-import React from 'react'
-import { Route, Routes, Navigate } from "react-router-dom";
-import { ThemeProvider } from "./providers/ThemeContext";
-import "./App.css";
+import React from "react";
+import { Route, Routes} from "react-router-dom";
 import HomePage from "./componenets/Home";
+import "./App.css";
 
 function App() {
   return (

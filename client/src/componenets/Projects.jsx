@@ -6,9 +6,6 @@ import Card from "react-bootstrap/Card";
 import linkImage from "../assets/link.svg";
 import linkImageDark from "../assets/linkimage-dark.svg";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 let project_list = [
   {
     id: 0,
@@ -90,6 +87,8 @@ let ProjectCard = (props) => {
         variant="top"
         src={props.img}
         alt="project-image"
+        width="350px"
+        height="180px"
       />
       <Card.Body style={{ borderRadius: "25px" }}>
         <Card.Title
@@ -145,9 +144,6 @@ let ProjectCard = (props) => {
 
 let ProjectsSectionDesktop = () => {
   const { darkModeStatus } = useContext(MyContext);
-  useEffect(() => {
-    AOS.init(); // Initialize AOS library
-  }, []);
 
   return (
     <Container className="project-section-container-desktop">
@@ -171,7 +167,7 @@ let ProjectsSectionDesktop = () => {
           </div>
         </Col>
       </Row>
-      <div data-aos="flip-up" data-aos-duration="1000">
+      {/* <div data-aos="flip-up" data-aos-duration="1000"> */}
         <Row className="row-projects-list-one">
           <Col className="col-card-hold" lg={4}>
             <ProjectCard
@@ -206,9 +202,9 @@ let ProjectsSectionDesktop = () => {
             />
           </Col>
         </Row>
-      </div>
+      {/* </div> */}
 
-      <div data-aos="flip-up" data-aos-duration="1000">
+      {/* <div data-aos="flip-up" data-aos-duration="1000"> */}
         <Row className="row-projects-list-two">
           <Col className="col-card-hold" lg={4}>
             {" "}
@@ -254,7 +250,7 @@ let ProjectsSectionDesktop = () => {
             See All Projects
           </a>
         </Row>
-      </div>
+      {/* </div> */}
     </Container>
   );
 };

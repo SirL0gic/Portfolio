@@ -30,13 +30,13 @@ let project_list = [
 
   {
     id: 2,
-    image: "https://i.imgur.com/HK4uPVl.png",
-    title: "Hire Hub",
+    image: "https://i.imgur.com/yuN0kk0.png",
+    title: "Text Analyser",
     description:
-      "Open-source job application system that simplifies the job search process!",
-    stack: "React - Node/Express - MongoDB",
-    live: "https://onedrive.live.com/?authkey=%21AKSxo4ZO4Lr7Lgc&id=D6B7302631DC2497%211355&cid=D6B7302631DC2497&parId=root&parQt=sharedby&o=OneUp",
-    code: "https://github.com/SirL0gic/HireHub",
+      "An AI based open-source library for text analysis in JS.",
+    stack: "Node",
+    live: "https://www.npmjs.com/package/textanalyser.js",
+    code: "https://github.com/SirL0gic/TextAnalyser.js",
   },
 
   {
